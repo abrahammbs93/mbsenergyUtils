@@ -12,8 +12,8 @@
     --running-title-width: 2.5in;
     --screen-pages-spacing: 5mm;
     --main-color: #889C9B;
-    --main-font: "Arial";
-    --header-font: "Arial";
+    --main-font: "Calibri";
+    --header-font: "Calibri";
   }
 
 /* ---------------------- For debugging -------------------- */
@@ -76,11 +76,12 @@ h1.title {
 
   @top-left {
     content: string(h1-title);
-    font-family: "Open Sans";
-    font-weight: 400;
-    color: var(--main-color);
+    font-family: "Calibri";
+    font-weight: 500;
+    color: #486966;
     border-bottom: 5px solid var(--main-color);
     margin-bottom: 0.7cm;
+    font-size: 10px
   }
 
   @top-center {
@@ -91,11 +92,12 @@ h1.title {
 
   @top-right {
     content: string(h1-text);
-    font-family: "Open Sans";
-    font-weight: 400;
-    color: var(--main-color);
+    font-family: "Calibri";
+    font-weight: 700;
+    color: #486966;
     border-bottom: 5px solid var(--main-color);
     margin-bottom: 0.7cm;
+    font-size: 10px
   }
 
   @top-right-corner {
@@ -112,7 +114,7 @@ h1.title {
     @bottom-right {
       content: counter(page);
 	  font-family: var(--main-font);
-	  font-weight: 400;
+	  font-weight: 600;
       color: #ffffff;
       border: 0px solid #87A1B0;
       background-color: #87A1B0;
@@ -122,7 +124,7 @@ h1.title {
       padding-right: 3cm;
       margin-bottom: 1cm;
       margin-top: 1cm;
-      font-size: 11pt;
+      font-size: 8pt;
     }
 }
 
@@ -132,7 +134,7 @@ h1.title {
     @bottom-left {
       content: counter(page);
 	  font-family: var(--main-font);
-	  font-weight: 400;
+	  font-weight: 600;
       color: #ffffff;
       border: 0px solid #87A1B0;
       background-color: #87A1B0;
@@ -142,7 +144,7 @@ h1.title {
       padding-left: 3cm;
       margin-bottom: 1cm;
       margin-top: 1cm;
-      font-size: 11pt;
+      font-size: 8pt;
     }
 }
 
@@ -242,31 +244,27 @@ h1.title {
 }
 
 /* ------------------------ Fonts ---------------------------- */
-/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');*/
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap'); */
 
-p, ul, a, ol {
+ul, a, ol {
   font-family: var(--main-font);
-  font-weight: 400;
-  color: #747E7E
+  font-weight: 600;
+  color: #486966
 }
 
 p {
+  font-size: 10pt;
+  font-family: var(--main-font);
   text-align: justify;
-  line-height: 2em;
-  margin-bottom: 1.5em;
-  font-weight: 400
+  line-height: 1.125em;
+  margin-bottom: 1em;
+  font-weight: 500;
+  color: #747E7E;
 }
 
-h1, h2, h3, h4 {
-  font-family: var(--header-font);
-  font-weight: 300
-}
 
 /* ------------------------ Style ----------------------------- */
 /* colors */
-h1, h2, h3, h4 {
-    color: var(--main-color)
-}
 
 h1.title, h1.subtitle, h2.author, h2.date {
     color: #ffffff;
@@ -274,46 +272,65 @@ h1.title, h1.subtitle, h2.author, h2.date {
 
 /* headers */
 h1.title {
-  font-size: 42pt;
+  font-size: 1pt;
   margin-right: 15%;
   font-weight: 300;
-  border-bottom: 1px solid #f7f7f7;
 
 }
 
 h1.subtitle {
   margin-right: 15%;
-  font-size: 24pt;
+  font-size: 1pt;
   font-weight: 300;
-  border-bottom: 0px solid #f7f7f7;
 
 }
 
 h2.author {
   margin-top: 70%;
-  font-size: 20pt;
+  font-size: 1pt;
   font-weight: 400;
 
 }
 
 h2.date {
-  font-size: 18pt;
+  font-size: 1pt;
   font-weight: 400;
 
 }
 
 /* normal headers */
 h1 {
-  font-size: 34pt;
-  font-weight: 300;
+  font-size: 18pt;
+  font-weight: 700;
+  font-family: var(--header-font);
   border-bottom: 1.25px solid #f7f7f7;
+  color: #486966
 
 
 }
 
+
 h2 {
-  font-size: 20pt;
-  font-weight: 300;
+  font-size: 15pt;
+  font-weight: 500;
+  color: var(--main-color);
+  font-family: var(--header-font);
+
+}
+
+h3 {
+  font-size: 13pt;
+  font-weight: 500;
+  color: var(--main-color);
+  font-family: var(--header-font);
+
+}
+
+h4, h5 {
+  font-size: 12pt;
+  font-weight: 400;
+  color: #486966;
+  font-family: var(--header-font);
 
 }
 
@@ -338,7 +355,7 @@ table th {
 }
 table td {
   font-family: var(--main-font);
-  font-size: 9pt;
+  font-size: 8pt;
   font-weight: 400;
   border-width: 1px;
   border-style: inset;
@@ -352,7 +369,7 @@ table, table th, table td {
 }
 table thead {
   font-family: var(--main-font);
-  font-size: 12pt;
+  font-size: 10pt;
   background-color: #87A1B0;
   color: #ffffff;
   font-weight: 300;
@@ -433,7 +450,7 @@ blockquote {
   padding: 0.2em 0.5em;
   color: #8596A6;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 
