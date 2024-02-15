@@ -1,11 +1,11 @@
-Package: innteamUtils
+Package: mbsenergyUtils
 Title: Utilities: Themes, Datasets and Functions for Innovation Team
 Version: 1.5.0
 Authors@R: 
     person(given = "Alejandro",
            family = "Abraham",
            role = c("aut", "cre"),
-           email = "a.abraham@innovationteam.eu")
+           email = "a.abraham@mbsconsulting.it")
 Description: Internal Use Only. Reproduction and Distribution is forbidden.
 Depends: R (>= 4.1.0),
     data.table,
@@ -31,9 +31,9 @@ License: Apache License (>= 2)
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.0
+RoxygenNote: 7.3.2
 VignetteBuilder: knitr
 Config/Needs/website:
     dplyr,
     tidyverse/tidytemplate
-URL: https://aba-innovationteam.github.io/innteamUtils/
+URL: https://abrahammbs93.github.io/mbsenergyUtils/
