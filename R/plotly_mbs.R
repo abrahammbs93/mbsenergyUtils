@@ -1,4 +1,4 @@
-#' Innovation Team Plotly Theme
+#' MBS Energy Plotly Theme
 #'
 #' @param plot plotly plot object
 #' @param plot_title Main title
@@ -18,13 +18,13 @@
 #'
 #'df |>
 #'  plot_ly(x = ~LifeExp, y = ~Population, type = "scatter", width = 900, height = 500) |>
-#'    plotly_innteam(plot_title = 'This is my title',
+#'    plotly_mbs(plot_title = 'This is my title',
 #'                   plot_subtitle = 'Here we will see a subtitle',
 #'                   plot_caption = 'Source: innteamUtils package',
 #'                   plot_xaxis = 'LifeExp',
 #'                   plot_yaxis = 'Population')
 #'
-plotly_innteam = function(plot, ...,
+plotly_mbs = function(plot, ...,
                           plot_title = "Insert Plot's Title",
                           plot_subtitle = "",
                           plot_caption = "",
@@ -46,17 +46,17 @@ plotly_innteam = function(plot, ...,
          paper_bgcolor = '#f6f6f6',
 
          legend = list(font = list(size = 13)),
-         font = list(family = "Open Sans", size = 15, color = '#225E64'),
+         font = list(family = "Open Sans", size = 15, color = '#889C9B'),
          margin = list(t = 75, b = 100),
 
          xaxis = list(title = list(text = plot_xaxis,
                                    font = list(size = 13)),
-                      tickfont = list(family = "Open Sans", size = 13, color = '#225E64'),
+                      tickfont = list(family = "Open Sans", size = 13, color = '#889C9B'),
                       zeroline = F),
 
          yaxis = list(title = list(text = plot_yaxis,
                                    font = list(size = 13)),
-                      tickfont = list(family = "Open Sans", size = 13, color = '#225E64'),
+                      tickfont = list(family = "Open Sans", size = 13, color = '#889C9B'),
                       zeroline = F),
 
          annotations =
@@ -65,7 +65,7 @@ plotly_innteam = function(plot, ...,
                 text = plot_caption,
                 showarrow = F, xref = 'paper', yref = 'paper',
                 xanchor = 'right', yanchor = 'auto',
-                font = list(family = "Open Sans", size = 13, color = '#225E64')),
+                font = list(family = "Open Sans", size = 13, color = '#889C9B')),
           width = 900, height = 500.
 
          ) |>

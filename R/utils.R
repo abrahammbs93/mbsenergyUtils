@@ -1,12 +1,12 @@
 pkg_resource = function(...) {
 
-  system.file("resources", ..., package = "innteamUtils", mustWork = TRUE)
+  system.file("resources", ..., package = "mbsenergyUtils", mustWork = TRUE)
 
 }
 
 pkg_font = function(...) {
 
-  system.file("resources", ..., package = "innteamUtils", mustWork = TRUE)
+  system.file("resources", ..., package = "mbsenergyUtils", mustWork = TRUE)
 
 }
 
@@ -14,7 +14,7 @@ pkg_font = function(...) {
 
 pkg_shiny = function(...) {
 
-  system.file("shinyfiles", ..., package = "innteamUtils", mustWork = TRUE)
+  system.file("shinyfiles", ..., package = "mbsenergyUtils", mustWork = TRUE)
 
 }
 
@@ -26,7 +26,7 @@ shiny_sys <- function(
 ) {
   system.file(
     ...,
-    package = "innteamUtils",
+    package = "mbsenergyUtils",
     lib.loc = lib.loc,
     mustWork = mustWork
   )

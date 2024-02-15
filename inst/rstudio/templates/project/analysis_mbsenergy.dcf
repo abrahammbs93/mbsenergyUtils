@@ -1,7 +1,7 @@
-Binding: analysis_innteam
-Title: Analytics Project (Innovation Team)
+Binding: analysis_mbsenergy
+Title: Analytics Project (MBS)
 OpenFiles: README.md
-Icon: innteamUtils_fav.png
+Icon: mbsenergyUtils_fav.png
 
 
 Parameter: CLIENT

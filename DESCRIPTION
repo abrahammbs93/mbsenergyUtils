@@ -1,6 +1,6 @@
 Package: mbsenergyUtils
 Title: Utilities: Themes, Datasets and Functions for Innovation Team
-Version: 1.5.0
+Version: 1.0.0
 Authors@R: 
     person(given = "Alejandro",
            family = "Abraham",
@@ -31,7 +31,7 @@ License: Apache License (>= 2)
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2
+RoxygenNote: 7.3.0
 VignetteBuilder: knitr
 Config/Needs/website:
     dplyr,

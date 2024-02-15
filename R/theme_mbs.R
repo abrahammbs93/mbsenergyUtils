@@ -1,10 +1,10 @@
-#' Innovation Team ggpolt2 Theme
+#' MBS ggpolt2 Theme
 #'
 #' Contains the parameters and colour for a standarized plot theme.
 #'
 #' @inheritParams ggplot2::theme_grey
 #'
-#' @author Alejandro Abraham <a.abraham@innovationteam.eu>
+#' @author Alejandro Abraham <a.abraham@mbsconsulting.it>
 #'
 #'
 #' @export
@@ -16,7 +16,7 @@
 #'
 #'
 #'
-theme_innteam = function(base_size = 12, base_family = 'open-sans', base_line_size = base_size/22, base_rect_size = base_size/22) {
+theme_mbs = function(base_size = 12, base_family = 'open-sans', base_line_size = base_size/22, base_rect_size = base_size/22) {
 
 sysfonts::font_add(family = "open-sans", regular = pkg_resource("fonts/OpenSans-Light.ttf"), italic = pkg_resource("fonts/OpenSans-LightItalic.ttf"))
 
@@ -47,7 +47,7 @@ t =
     axis.line =          element_blank(),
     axis.line.x =        NULL,
     axis.line.y =        NULL,
-    axis.text =          element_text(size = rel(0.8), colour = "#225E64"),
+    axis.text =          element_text(size = rel(0.8), colour = "#"),
     axis.text.x =        element_text(margin = margin(t = 0.8 * half_line / 2), vjust = 1),
     axis.text.x.top =    element_text(margin = margin(b = 0.8 * half_line / 2), vjust = 0),
     axis.text.y =        element_text(margin = margin(r = 0.8 * half_line / 2), hjust = 1),
@@ -61,7 +61,7 @@ t =
     axis.ticks.length.y.left = NULL,
     axis.ticks.length.y.right = NULL,
     axis.title.x =       element_text(
-                           colour = '#225E64',
+                           colour = '#889C9B',
                            family = base_family,
                            size = rel(0.8),
                            margin = margin(t = half_line / 2),
@@ -73,7 +73,7 @@ t =
                            vjust = 0
                          ),
     axis.title.y =       element_text(
-                           colour = '#225E64',
+                           colour = '#889C9B',
                            family = base_family,
                            size = rel(0.8),
                            angle = 90,
@@ -98,9 +98,9 @@ t =
     legend.key.size =    unit(1.2, "lines"),
     legend.key.height =  NULL,
     legend.key.width =   NULL,
-    legend.text =        element_text(family = base_family, size = rel(0.8), colour = '#19464A'),
+    legend.text =        element_text(family = base_family, size = rel(0.8), colour = '#486966'),
     legend.text.align =  NULL,
-    legend.title =       element_text(hjust = 0, colour = '#19464A'),
+    legend.title =       element_text(hjust = 0, colour = '#486966'),
     legend.title.align = NULL,
     legend.position =    "right",
     legend.direction =   NULL,
@@ -144,7 +144,7 @@ t =
 
     plot.background =    element_rect(fill = "#f6f6f6", color = NA),
     plot.title =         element_text( # font size "large"
-                           colour = '#19464A',
+                           colour = '#486966',
                            family = base_family,
                            face = 'plain',
                            size = rel(1.65),
@@ -153,13 +153,13 @@ t =
                          ),
     plot.title.position = "panel",
     plot.subtitle =      element_text( # font size "regular"
-                           colour = '#19464A',
+                           colour = '#486966',
                            family = base_family,
                            hjust = 0, vjust = 1,
                            margin = margin(b = half_line * 3)
                          ),
     plot.caption =       element_text( # font size "small"
-                           colour = '#225E64',
+                           colour = '#889C9B',
                            family = base_family,
                            size = rel(0.8),
                            hjust = 1, vjust = 1,

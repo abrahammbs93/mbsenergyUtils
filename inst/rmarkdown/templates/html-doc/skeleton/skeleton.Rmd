@@ -28,15 +28,15 @@ knitr::opts_chunk$set(echo=FALSE,
 # Kable Options
 options(knitr.kable.NA = '')
 
-# Load the innteamUtils and framework packages
-library(innteamUtils)
+# Load the mbsenergyUtils and framework packages
+library(mbsenergyUtils)
 library(data.table)
 library(reactable)
 library(ggplot2)
 library(plotly)
 
 ### ggplot2 global theme
-theme_set(theme_innteam())
+theme_set(theme_mbs())
 
 ### reactable global theme
 options(reactable.theme = react_format)
@@ -79,7 +79,7 @@ dt[, cyl := as.factor(cyl)] %>%
            y = mpg,
            color = cyl)) + 
     geom_point() +
-        theme_innteam() + 
+        theme_mbs() + 
             scale_color_brewer(type = 'qual', palette = 6) +
                  labs(title = 'Another mtcars Plot',
                       subtitle = 'But this time it is a data.table',
@@ -96,9 +96,9 @@ dt %>%
           y = ~mpg,
           color = ~cyl,
           type = "scatter") %>% 
-    plotly_innteam(plot_title = 'This is my title',
+    plotly_mbs(plot_title = 'This is my title',
                      plot_subtitle = 'Here we will see a subtitle',
-                     plot_caption = 'Source: innteamUtils package',
+                     plot_caption = 'Source: mbsenergyUtils package',
                    plot_xaxis = 'LifeExp',
                    plot_yaxis = 'Population',
                      width = 900, height = 500)

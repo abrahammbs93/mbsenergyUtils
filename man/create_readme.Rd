@@ -5,8 +5,8 @@
 \title{Create README.md files}
 \usage{
 create_readme(
-  template = c("Overview", "Documents", "Code", "DataRaw", "DataProcessed",
-    "DataOutput", "Figures", "Deliverables", "Reports"),
+  template = c("Overview", "Documents", "Code", "DataRaw", "DataProcessed", "DataOutput",
+    "Figures", "Deliverables", "Reports"),
   path = getwd()
 )
 }

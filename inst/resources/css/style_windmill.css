@@ -11,9 +11,9 @@
     --color-mbox: rgba(0, 0, 0, 0.2);
     --running-title-width: 2.5in;
     --screen-pages-spacing: 5mm;
-    --main-color: #037F8C;
-    --main-font: "Open Sans";
-    --header-font: "Open Sans";
+    --main-color: #889C9B;
+    --main-font: "Arial";
+    --header-font: "Arial";
   }
 
 /* ---------------------- For debugging -------------------- */
@@ -242,12 +242,12 @@ h1.title {
 }
 
 /* ------------------------ Fonts ---------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');*/
 
 p, ul, a, ol {
   font-family: var(--main-font);
   font-weight: 400;
-  color: #54565B
+  color: #747E7E
 }
 
 p {

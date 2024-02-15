@@ -1,7 +1,7 @@
-Binding: shiny_innteam
-Title: Shiny App (Innovation Team)
+Binding: shiny_mbsenergy
+Title: Shiny App (MBS)
 OpenFiles: README.md, app.R
-Icon: innteamUtils_fav.png
+Icon: mbsenergyUtils_fav.png
 
 
 Parameter: CLIENT

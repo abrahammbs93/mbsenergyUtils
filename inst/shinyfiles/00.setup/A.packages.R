@@ -14,7 +14,7 @@ library(bslib)
 
 ### Utilities
 library(data.table)
-library(innteamUtils)
+library(mbsenergyUtils)
 library(vroom)
 library(openxlsx)
 

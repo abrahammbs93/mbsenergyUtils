@@ -1,5 +1,5 @@
 
-shiny_innteam = function(path, ...) {
+shiny_mbs = function(path, ...) {
 
   # ensure path exists
   dir.create(path, recursive = TRUE, showWarnings = FALSE)
