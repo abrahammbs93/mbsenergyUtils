@@ -7,10 +7,10 @@
     --background: whitesmoke;
     --pagedjs-width: 210mm;
     --pagedjs-height: 297mm;
-    --color-paper: white;
+    --color-paper: whitesmoke;
     --color-mbox: rgba(0, 0, 0, 0.2);
     --running-title-width: 2.5in;
-    --screen-pages-spacing: 5mm;
+    --screen-pages-spacing: 2.5mm;
     --main-color: #889C9B;
     --main-font: "Calibri";
     --header-font: "Calibri";
@@ -70,8 +70,8 @@ h1.title {
 
   @top-left-corner {
     content: "";
-    border-bottom: 5px solid var(--main-color);
-    margin-bottom: 0.7cm;
+    border-bottom: 4px solid var(--main-color);
+    margin-bottom: 0.2cm;
   }
 
   @top-left {
@@ -79,31 +79,35 @@ h1.title {
     font-family: "Calibri";
     font-weight: 800;
     color: #486966;
-    border-bottom: 5px solid var(--main-color);
-    margin-bottom: 0.7cm;
+    border-bottom: 4px solid var(--main-color);
+    margin-bottom: 0.2cm;
     font-size: 14px
   }
 
-  @top-center {
+@top-center {
     content: "";
-    border-bottom: 5px solid var(--main-color);
-    margin-bottom: 0.7cm;
-  }
+    border-bottom: 4px solid var(--main-color);
+    margin-bottom: 0.2cm;
+    background-image: url(../logo/refe_sce_logo.png);
+    background-size: 38px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
   @top-right {
     content: string(h1-text);
     font-family: "Calibri";
     font-weight: 800;
     color: #486966;
-    border-bottom: 5px solid var(--main-color);
-    margin-bottom: 0.7cm;
+    border-bottom: 4px solid var(--main-color);
+    margin-bottom: 0.2cm;
     font-size: 14px
   }
 
   @top-right-corner {
     content: "";
-    border-bottom: 5px solid var(--main-color);
-    margin-bottom: 0.7cm;
+    border-bottom: 4px solid var(--main-color);
+    margin-bottom: 0.2cm;
   }
 }
 
@@ -150,7 +154,7 @@ h1.title {
 
 /* ------------------------ Front Cover --------------------- */
 @page:first{
-    background-color: #ffffff;
+    background-color: whitesmoke;
     background-image: var(--front-cover), var(--front-cover-2);
     background-repeat: no-repeat, no-repeat;
     background-position: 15cm 23cm, 0cm 0cm;
@@ -253,7 +257,7 @@ ul, a, ol {
 }
 
 p {
-  font-size: 10pt;
+  font-size: 9pt;
   font-family: var(--main-font);
   text-align: justify;
   line-height: 1.15em;
@@ -300,8 +304,8 @@ h2.date {
 
 /* normal headers */
 h1 {
-  font-size: 19pt;
-  font-weight: 800;
+  font-size: 17pt;
+  font-weight: 900;
   font-family: var(--header-font);
   border-bottom: 1.25px solid #f7f7f7;
   color: #486966
@@ -311,14 +315,6 @@ h1 {
 
 
 h2 {
-  font-size: 16pt;
-  font-weight: 700;
-  color: var(--main-color);
-  font-family: var(--header-font);
-
-}
-
-h3 {
   font-size: 14pt;
   font-weight: 700;
   color: var(--main-color);
@@ -326,8 +322,16 @@ h3 {
 
 }
 
-h4, h5 {
+h3 {
   font-size: 13pt;
+  font-weight: 700;
+  color: var(--main-color);
+  font-family: var(--header-font);
+
+}
+
+h4, h5 {
+  font-size: 12pt;
   font-weight: 600;
   color: #486966;
   font-family: var(--header-font);
@@ -485,3 +489,61 @@ blockquote {
     max-width: 100%;
   }
 
+
+/* Callout styles */
+
+.callout-main {
+    background-color: #DBE6E0;
+    padding: 6px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.callout-item {
+    background-color: #EDF1F5;
+    padding: 5px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.callout-wrap {
+    background-color: #FCE9DE;
+    padding: 6px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.callout-left {
+    width: 15%;
+    text-align: center !important;
+    font-size: 12px !important;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.callout-right {
+    width: 85%;
+    font-size: 9px !important;
+    padding: 4px;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+.callout-center {
+    font-size: 9px !important;
+    margin: 15px;
+    font-weight: bold;
+    padding: 4px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
