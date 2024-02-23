@@ -20,7 +20,7 @@ react_format = reactable::reactableTheme(
 
   color = "#363636",
   tableStyle = list(fontWeight = 400, fontSize = 13),
-  headerStyle = list(backgroundColor = "#889C9B", color = 'white', fontWeight = 300, fontSize = 14),
+  headerStyle = list(backgroundColor = "#87A1B0", color = 'white', fontWeight = 300, fontSize = 14),
 
   backgroundColor = "#ffffff",
   borderColor = "#dfe2e5",
@@ -28,7 +28,6 @@ react_format = reactable::reactableTheme(
   highlightColor = "#DCE4F2",
 
   cellPadding = "8px 12px",
-  style = list(fontFamily = 'Open Sans'),
 
   searchInputStyle = list(width = "100%"),
 
