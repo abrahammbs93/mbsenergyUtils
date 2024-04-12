@@ -71,7 +71,7 @@ h1.title {
   @top-left-corner {
     content: "";
     border-bottom: 4px solid var(--main-color);
-    margin-bottom: 0.2cm;
+    margin-bottom: 0.1cm;
   }
 
   @top-left {
@@ -80,15 +80,14 @@ h1.title {
     font-weight: 800;
     color: #486966;
     border-bottom: 4px solid var(--main-color);
-    margin-bottom: 0.2cm;
-    font-size: 14px
+    margin-bottom: 0.1cm;
+    font-size: 12px
   }
 
 @top-center {
     content: "";
     border-bottom: 4px solid var(--main-color);
-    margin-bottom: 0.2cm;
-    background-image: url(../logo/refe_sce_logo.png);
+    margin-bottom: 0.1cm;
     background-size: 38px;
     background-repeat: no-repeat;
     background-position: center;
@@ -100,22 +99,32 @@ h1.title {
     font-weight: 800;
     color: #486966;
     border-bottom: 4px solid var(--main-color);
-    margin-bottom: 0.2cm;
-    font-size: 14px
+    margin-bottom: 0.1cm;
+    font-size: 12px
   }
 
   @top-right-corner {
     content: "";
     border-bottom: 4px solid var(--main-color);
-    margin-bottom: 0.2cm;
+    margin-bottom: 0.1cm;
   }
+
+  @bottom-center {
+      content: "";
+      margin-bottom: 00cm;
+      background-image: url(../logo/refe_sce_logo.png);
+      background-size: 38px;
+      background-repeat: no-repeat;
+      background-position: center;
+   }
+
 }
 
 /* counter */
 @page:left {
 
     /* numbering */
-    @bottom-right {
+    @bottom-left {
       content: counter(page);
 	  font-family: var(--main-font);
 	  font-weight: 600;
@@ -130,6 +139,16 @@ h1.title {
       margin-top: 1cm;
       font-size: 8pt;
     }
+
+  @bottom-center {
+      content: "";
+      margin-bottom: 0cm;
+      background-image: url(../logo/refe_sce_logo.png);
+      background-size: 38px;
+      background-repeat: no-repeat;
+      background-position: center;
+   }
+
 }
 
 @page:right {
@@ -150,6 +169,16 @@ h1.title {
       margin-top: 1cm;
       font-size: 8pt;
     }
+
+  @bottom-center {
+      content: "";
+      margin-bottom: 0.0cm;
+      background-image: url(../logo/refe_sce_logo.png);
+      background-size: 38px;
+      background-repeat: no-repeat;
+      background-position: center;
+   }
+
 }
 
 /* ------------------------ Front Cover --------------------- */

@@ -6,7 +6,7 @@
 #' @author Alejandro Abraham <a.abraham@innovationteam.eu>
 #'
 #' @examples
-#'library(innteamUtils)
+#'library(mbsenergyUtils)
 #'library(reactable)
 #'reactable(iris, theme = react_format,
 #'          highlight = TRUE, striped = TRUE, filterable = TRUE, resizable = TRUE, wrap = FALSE)
