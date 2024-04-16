@@ -11,7 +11,7 @@
     --color-mbox: rgba(0, 0, 0, 0.2);
     --running-title-width: 2.5in;
     --screen-pages-spacing: 2.5mm;
-    --main-color: #889C9B;
+    --main-color: #00544F;
     --main-font: "Calibri";
     --header-font: "Calibri";
   }
@@ -70,43 +70,42 @@ h1.title {
 
   @top-left-corner {
     content: "";
-    border-bottom: 4px solid var(--main-color);
-    margin-bottom: 0.1cm;
+    margin-bottom: 0.25cm;
   }
 
   @top-left {
     content: string(h1-title);
     font-family: "Calibri";
     font-weight: 800;
-    color: #486966;
-    border-bottom: 4px solid var(--main-color);
-    margin-bottom: 0.1cm;
+    color: #383838;
+    border-bottom: 3px solid #8497B0;
+    margin-bottom: 0.25cm;
     font-size: 12px
   }
 
 @top-center {
-    content: "";
-    border-bottom: 4px solid var(--main-color);
-    margin-bottom: 0.1cm;
-    background-size: 38px;
-    background-repeat: no-repeat;
-    background-position: center;
+    content: "Italian Electricity Market";
+    font-family: "Calibri";
+    font-weight: 800;
+    color: #383838;
+    border-bottom: 3px solid #8497B0;
+    margin-bottom: 0.25cm;
+    font-size: 14px
 }
 
   @top-right {
     content: string(h1-text);
     font-family: "Calibri";
     font-weight: 800;
-    color: #486966;
-    border-bottom: 4px solid var(--main-color);
-    margin-bottom: 0.1cm;
+    color: #383838;
+    border-bottom: 3px solid #8497B0;
+    margin-bottom: 0.25cm;
     font-size: 12px
   }
 
   @top-right-corner {
     content: "";
-    border-bottom: 4px solid var(--main-color);
-    margin-bottom: 0.1cm;
+    margin-bottom: 0.25cm;
   }
 
   @bottom-center {
@@ -129,8 +128,8 @@ h1.title {
 	  font-family: var(--main-font);
 	  font-weight: 600;
       color: #ffffff;
-      border: 0px solid #87A1B0;
-      background-color: #87A1B0;
+      border: 0px solid #8497B0;
+      background-color: #8497B0;
       margin-left: 15cm;
       margin-right: -3cm;
       padding-left: 1cm;
@@ -159,8 +158,8 @@ h1.title {
 	  font-family: var(--main-font);
 	  font-weight: 600;
       color: #ffffff;
-      border: 0px solid #87A1B0;
-      background-color: #87A1B0;
+      border: 0px solid #8497B0;
+      background-color: #8497B0;
       margin-right: 15cm;
       margin-left: -3cm;
       padding-right: 1cm;
@@ -282,7 +281,7 @@ h1.title {
 ul, a, ol {
   font-family: var(--main-font);
   font-weight: 600;
-  color: #486966
+  color: #3A3A3A
 }
 
 p {
@@ -292,7 +291,7 @@ p {
   line-height: 1.15em;
   margin-bottom: 1.025em;
   font-weight: 500;
-  color: #747E7E;
+  color: #3A3A3A;
 }
 
 
@@ -337,7 +336,7 @@ h1 {
   font-weight: 900;
   font-family: var(--header-font);
   border-bottom: 1.25px solid #f7f7f7;
-  color: #486966
+  color: #00544F
 
 
 }
@@ -362,7 +361,7 @@ h3 {
 h4, h5 {
   font-size: 12pt;
   font-weight: 600;
-  color: #486966;
+  color: #54565B;
   font-family: var(--header-font);
 
 }
@@ -403,7 +402,7 @@ table, table th, table td {
 table thead {
   font-family: var(--main-font);
   font-size: 10pt;
-  background-color: #87A1B0;
+  background-color: #97BBFF;
   color: #ffffff;
   font-weight: 300;
   border-bottom: 0px solid #ddd;
@@ -523,8 +522,8 @@ blockquote {
 
 .callout-main {
     background-color: #DBE6E0;
-    padding: 6px;
-    border-radius: 8px;
+    padding: 5px;
+    border-radius: 7px;
     display: flex;
     align-items: center;
     margin-bottom: 5px;
@@ -533,7 +532,7 @@ blockquote {
 .callout-item {
     background-color: #EDF1F5;
     padding: 5px;
-    border-radius: 8px;
+    border-radius: 7px;
     display: flex;
     align-items: center;
     margin-bottom: 5px;
@@ -541,26 +540,27 @@ blockquote {
 
 .callout-wrap {
     background-color: #FCE9DE;
-    padding: 6px;
-    border-radius: 8px;
+    padding: 5px;
+    border-radius: 7px;
     display: flex;
     align-items: center;
     margin-bottom: 5px;
 }
 
 .callout-left {
-    width: 15%;
+    width: 10%;
     text-align: center !important;
-    font-size: 12px !important;
+    font-size: 10px !important;
+    color: #3A3A3A;
     font-weight: bold;
-    margin-right: 10px;
+    margin-right: 8px;
 }
 
 .callout-right {
-    width: 85%;
-    font-size: 9px !important;
-    padding: 4px;
-    margin-right: 15px;
+    width: 90%;
+    font-size: 8px !important;
+    padding: 3px;
+    margin-right: 12px;
     margin-left: 10px;
 }
 

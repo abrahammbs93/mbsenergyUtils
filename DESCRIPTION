@@ -1,6 +1,6 @@
 Package: mbsenergyUtils
 Title: Utilities: Themes, Datasets and Functions for Innovation Team
-Version: 1.0.1
+Version: 1.0.3
 Authors@R: 
     person(given = "Alejandro",
            family = "Abraham",
