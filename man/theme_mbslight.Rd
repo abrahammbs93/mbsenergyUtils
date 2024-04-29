@@ -2,7 +2,7 @@
 % Please edit documentation in R/theme_mbslight.R
 \name{theme_mbslight}
 \alias{theme_mbslight}
-\title{MBS ggpolt2 Theme}
+\title{MBS ggpolt2 Theme Light}
 \usage{
 theme_mbslight(base_size = 11)
 }
